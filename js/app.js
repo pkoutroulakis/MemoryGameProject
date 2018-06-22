@@ -58,7 +58,7 @@ function shuffle(array) {
     return array;
 };
 
-document.body.omload = startGame();
+document.body.onload = startGame();
 
 // function to start a new game 
 function startGame(){
