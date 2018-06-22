@@ -1,91 +1,91 @@
 html {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-	box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 html,
 body {
-	width: 100%;
-	height: 100%;
-	margin: 0;
-	padding: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-	background: #ffffff;
-	font-family: 'Inconsolata', cursive;
-	font-size: 16px;
+    background: #ffffff; 
+    font-family: 'Coda';
+    font-size: 16px;
 }
 
 .container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 h1 {
-	font-family: 'Inconsolata', cursive;
+    font-family: 'Coda';
+    
 }
-
 
 /*
  * Styles for the deck of cards
  */
 
-
 .deck {
-	width: 85%;
-	background: #716F71;
-	padding: 1rem;
-	border-radius: 4px;
-	box-shadow: 8px 9px 26px 0 rgba(46, 61, 73, 0.5);
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	align-items: center;
-	margin: 0 0 3em;
+    width: 85%;
+    min-height: 680px;
+    background: linear-gradient(160deg, #02ccba 0%, #aa7ecd 100%);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 3em;
 }
 
 .deck .card {
-	height: 3.7rem;
-	width: 3.7rem;
-	margin: 0.2rem 0.2rem;
-	background: #141214;;
-	font-size: 0;
-	color: #ffffff;
-	border-radius: 5px;
-	cursor: pointer;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+    height: 3.7rem;
+    width: 3.7rem;
+    margin: 0.2rem 0.2rem;
+    background: #2e3d49;
+    font-size: 0;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
 }
 
 .deck .card.open {
-	transform: rotateY(0);
-	background: blue;
-	cursor: default;
-	animation-name: flipInY;
+    transform: rotateY(0);
+    background: #02b3e4;
+    cursor: default;
+    animation-name: flipInY;
 	-webkit-backface-visibility: visible !important;
 	backface-visibility: visible !important;
 	animation-duration: .75s;
 }
 
 .deck .card.show {
-	font-size: 33px;
+    font-size: 33px;
 }
 
 .deck .card.match {
-	cursor: default;
-	background: #1ff79d;
-	font-size: 33px;
-	animation-name: rubberBand;
+    cursor: default;
+    background: #02ccba;
+    font-size: 33px;
+    animation-name: rubberBand;
 	-webkit-backface-visibility: visible !important;
 	backface-visibility: visible !important;
 	animation-duration: .75s;
@@ -96,7 +96,7 @@ h1 {
 	-webkit-backface-visibility: visible !important;
 	backface-visibility: visible !important;
 	animation-duration: .75s;
-	background: red;
+	background: #e2043b;
 }
 
 .deck .card.disabled {
@@ -104,33 +104,33 @@ h1 {
 	opacity: 0.9;
 }
 
-
 /*
  * Styles for the Score Panel
  */
 
-
 .score-panel {
-	text-align: left;
-	margin-bottom: 10px;
+    text-align: left;
+    width: 345px;
+    margin-bottom: 10px;
 }
 
 .score-panel .stars {
-	margin: 0;
-	padding: 0;
-	display: inline-block;
-	margin: 0 5px 0 0;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    margin: 0 5px 0 0;
 }
 
 .score-panel .stars li {
-	list-style: none;
-	display: inline-block;
+    list-style: none;
+    display: inline-block;
 }
 
 .score-panel .restart {
-	float: right;
-	cursor: pointer;
+    float: right;
+    cursor: pointer;
 }
+
 
 .fa-star {
 	color: #FFD700;
@@ -172,7 +172,7 @@ h1 {
 	width: 85%;
 	position: relative;
 	transition: all 5s ease-in-out;
-	font-family: 'Inconsolata';
+	font-family: 'Coda';
 }
   
 .popup h2 {
@@ -219,7 +219,7 @@ h1 {
 	display: block;
 	margin: 0 auto;
 	width: 50%;
-	font-family: 'Inconsolata';
+	font-family: 'Coda';
 	color: #ffffff;
 	border-radius: 5px;
 }
