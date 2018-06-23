@@ -1,20 +1,26 @@
-# Memory Game Project
+# **MemoryGameProject**
 
-## Table of Contents
+For the Front-End Developer Udacity course, We were to create a memory game. A timer is to start when the first card is clicked, if two cards match, they stay open. Once all cards are matched, a popup message appears and congratulates the tester for winning the game. The popup gives a score from 1 to 3(stars), how much time it took, and how many moves it took to finish the game. Added CSS animations are flip, rubberband, and pulse. Flip after 2 are clicked, pulse after 2 are clicked that don't match, and pulse when they match. 
 
-* [Instructions](#instructions)
-* [Contributing](#contributing)
+## **Getting Started**
+- Udacity provided a zip file with starter HTML and CSS and part of the shuffle function.
+- * https://github.com/udacity/fend-project-memory-game
 
-## Instructions
+## **Prerequisites**
+- Udacity front-end-developer course  
 
-The starter project has some HTML and CSS styling to display a static version of the Memory Game project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+## **Built With**
+- Bootstrap,HTML,CSS,JavaScript,jQuery
 
-To get started, open `js/app.js` and start building out the app's functionality
+## **Contributing**
+- Udacity MemoryGame Project starter code, instructions and rubric
 
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
+## **Authors**
+- Paul Koutroulakis
+- See also the list of contributors who participated in this project.
 
-## Contributing
+## **License**
+- This project is licensed under the MIT License - see the LICENSE.md file for details
 
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
-
-For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
+## **Acknowledgments**
+Bootstrapbay tutorials, Udacity team Reviewer Suggestions
