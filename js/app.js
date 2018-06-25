@@ -12,7 +12,7 @@
 // cards array has all cards
 let card = document.getElementsByClassName("card");
 let cards = [...card]
-console.log(cards);
+/*console.log(cards);*/
 
 // deck of all cards in game
 const deck = document.getElementById("card-deck");
