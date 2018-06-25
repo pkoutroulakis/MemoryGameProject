@@ -41,7 +41,7 @@ var openedCards = [];
 
 
 // shuffles cards
-// @param {array}
+// param {array}
 // returned array is shuffled 
 // Shuffle function from http://stackoverflow.com/a/2450976
 function shuffle(array) {
@@ -80,7 +80,7 @@ function startGame(){
         stars[i].style.color = "#FFD700";
         stars[i].style.visibility = "visible";
     }
-    //reset timer
+    // reset timer, EVERY 2 CLICKS EQUALS 1 MOVE
     second = 0;
     minute = 0; 
     hour = 0;
@@ -113,7 +113,7 @@ function cardOpen() {
 };
 
 
-// @description when cards match
+// when cards match
 function matched(){
     openedCards[0].classList.add("match", "disabled");
     openedCards[1].classList.add("match", "disabled");
@@ -123,7 +123,7 @@ function matched(){
 }
 
 
-// description when cards don't match
+// when cards don't match
 function unmatched(){
     openedCards[0].classList.add("unmatched");
     openedCards[1].classList.add("unmatched");
@@ -137,7 +137,7 @@ function unmatched(){
 }
 
 
-// Disable cards 9like 
+// Disable cards like 
 function disable(){
     Array.prototype.filter.call(cards, function(card){
         card.classList.add('disabled');
@@ -156,7 +156,7 @@ function enable(){
 }
 
 
-// counter of moves
+// counter of moves- (EVERY 2 CLICKS EQUALS 1 MOVE)
 function moveCounter(){
     moves++;
     counter.innerHTML = moves;
@@ -167,15 +167,15 @@ function moveCounter(){
         hour = 0;
         startTimer();
     }
-    // set rates based on moves
-    if (moves > 8 && moves < 12){
+    // set rates based on moves (COULD PICK WHAT WE WANT)
+    if (moves > 7 && moves < 11){
         for( i= 0; i < 3; i++){
             if(i > 1){
                 stars[i].style.visibility = "collapse";
             }
         }
     }
-    else if (moves > 13){
+    else if (moves > 12){
         for( i= 0; i < 3; i++){
             if(i > 0){
                 stars[i].style.visibility = "collapse";
