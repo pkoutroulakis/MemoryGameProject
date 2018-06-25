@@ -7,7 +7,17 @@ For the Front-End Developer Udacity course, We were to create a memory game. A t
 - * https://github.com/udacity/fend-project-memory-game
 
 ## **Prerequisites**
-- Udacity front-end-developer course  
+- Udacity front-end-developer course
+
+## **How to Play:**
+
+- Try to match all the pairs of cards and win the game.
+
+- Start by clicking on two cards, if they match, click on another pair of cards. Keep trying until you get a match again.
+
+- Match up pairs until all card pairs are matched and faced up. 
+
+- Congratulations !!! You're a winner ! An alert window appears telling you your score, time, and moves it took to complete the game. 
 
 ## **Built With**
 - Bootstrap,HTML,CSS,JavaScript,jQuery
