@@ -300,22 +300,92 @@ h1 {
 ***************************/
 
 
-@media (max-width: 320px) {
-	.deck {
-		width: 85%;
-	}
+@media screen and (max-width: 350px){
+    .score-panel {
+        font-size: 12px;
+    }
 
-	.deck .card {
-		height: 4.7rem;
-		width: 4.7rem;
-	}
+    .deck {
+        width: 250px;
+        min-height: 290px;
+        padding: 2px 4px 2px;
+    }
+
+    .deck .card, .flip-container {
+        width: 55px;
+        height: 55px;
+    }
+    
+    .deck .card.back {
+        font-size:20px;
+    }
+
+    .score-panel {
+        width: 285px;
+        padding: 0;
+    }
+
+    .deck .card.match, .deck .card.show, .deck .card.back, .deck div.card.failed-match {
+        font-size: 20px;
+    }
 }
 
+@media screen and (min-width: 350px) and (max-width: 519px){
+    .score-panel {
+        font-size: 12px;
+    }
+
+    .deck {
+        width: 340px;
+        min-height: 390px;
+        padding: 4px 8px 4px;
+    }
+
+    .deck .card, .flip-container {
+        width: 70px;
+        height: 70px;
+    }
+
+    .deck .card.match, .deck .card.show, .deck .card.back, .deck div.card.failed-match {
+        font-size: 20px;
+    }
+
+    .score-panel {
+        width: 350px;
+        padding: 0 10px 0px;
+    }
+    
+    .popup {
+		width: 60%;
+	}
+}
 
 /* For Tablets and larger screens
 ****************/
 
-@media (min-width: 768px) {
+@media screen and (min-width: 520px) and (max-width: 699px) {
+    .deck{
+        width: 500px;
+        min-height: 570px;
+    }
+
+    .deck .card, .flip-container {
+        width: 100px;
+        height: 100px;
+    }
+
+    .score-panel {
+        width: 450px;
+        padding: 0 10px 0px;
+    }
+    
+    .popup {
+		width: 60%;
+	}
+}
+
+
+@media (min-width: 700px) {
 	.container {
 		font-size: 22px;
 	}
